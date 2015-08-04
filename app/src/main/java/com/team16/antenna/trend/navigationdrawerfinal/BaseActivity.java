@@ -14,8 +14,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.*;
-
 
 public class BaseActivity extends ActionBarActivity {
 
@@ -93,7 +91,7 @@ public class BaseActivity extends ActionBarActivity {
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,final int position, long id) {
-                drawerLayout.closeDrawer(Gravity.START);
+                drawerLayout.closeDrawer(Gravity.LEFT);
 
                 Handler mHandler = new Handler();
                 mHandler.postDelayed(new Runnable() {

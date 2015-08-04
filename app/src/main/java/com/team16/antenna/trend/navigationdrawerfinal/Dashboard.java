@@ -1,7 +1,6 @@
 package com.team16.antenna.trend.navigationdrawerfinal;
 
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -58,10 +57,10 @@ public class Dashboard extends BaseActivity {
             public void onClick(View view) {
                 if(drawerList.isShown()){
                     //Close Navigation Drawer
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                 }else {
                     //Open Navigation Drawer
-                    drawerLayout.openDrawer(Gravity.START);
+                    drawerLayout.openDrawer(Gravity.LEFT);
                 }
             }
         });
